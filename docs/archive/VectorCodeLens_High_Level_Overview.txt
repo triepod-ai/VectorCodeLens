@@ -1,0 +1,26 @@
+VectorCodeLens - Semantic Codebase Analysis Platform
+
+VectorCodeLens is an AI-powered codebase analysis tool that transforms how developers understand and navigate code. It goes beyond traditional static analysis by adding semantic understanding through vector embeddings and Large Language Models (LLMs).
+
+CORE CONCEPT:
+The platform scans codebases, intelligently chunks code into meaningful segments, analyzes them using LLMs to extract semantic meaning, converts them to vector embeddings, and stores them in a vector database. This enables natural language querying - developers can ask questions like "How are errors handled?" or "Show me authentication patterns" and get relevant code snippets with context.
+
+KEY FEATURES:
+- Semantic Code Understanding: Understands code intent, not just syntax
+- Natural Language Querying: Plain English questions about your codebase
+- Progressive Enhancement: Works with minimal dependencies, becomes more powerful with additional services
+- Multi-LLM Support: Integrates with local (Ollama) and cloud (Claude) LLMs
+- Vector-Based Search: Uses embeddings for similarity-based code discovery
+- Intelligent Chunking: Structure-aware code segmentation that respects function/class boundaries
+
+ARCHITECTURE:
+Built on Node.js/TypeScript with modular design following the Model Context Protocol (MCP). Core components include Scanner (file discovery), Analysis (LLM processing), Storage (vector database), and Query Handler (natural language processing). Uses Qdrant for vector storage and supports both local and cloud-based AI services.
+
+USE CASES:
+- Code exploration and understanding for new team members
+- Finding implementation patterns across large codebases
+- Identifying security vulnerabilities or code smells
+- Documentation generation and code review assistance
+- Legacy code analysis and modernization planning
+
+The platform emphasizes privacy-first design with local processing capabilities while offering cloud integration for enhanced functionality.

@@ -427,8 +427,8 @@ The legacy tools will remain available for backward compatibility but are consid
 ## Support
 
 For issues or questions:
-1. Check troubleshooting.md
-2. Review lessons_learned.md
+1. Check archive/troubleshooting.md
+2. Review archive/lessons_learned.md
 3. Consult API documentation in CLAUDE.md
 4. Check existing test files for examples
 

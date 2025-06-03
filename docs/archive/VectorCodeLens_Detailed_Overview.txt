@@ -1,0 +1,122 @@
+  VectorCodeLens is a sophisticated semantic codebase analysis platform that leverages vector embeddings and Large
+  Language Models (LLMs) to provide intelligent code understanding and natural language querying capabilities.
+
+  Application Summary
+
+  This is an AI-powered code analysis tool that transforms traditional static code analysis by adding semantic
+  understanding. It scans codebases, breaks them into intelligent chunks, analyzes them using LLMs, converts them
+  to vector embeddings, and stores them in a vector database for semantic search. Users can then query their
+  codebase using natural language questions like "How are errors handled?" or "Show me authentication patterns."
+
+  The system implements the Model Context Protocol (MCP) for AI model integration and follows a progressive
+  enhancement strategy - it works with minimal dependencies but becomes more powerful as additional services are
+  available.
+
+  Core Features
+
+  - Semantic Code Understanding: Goes beyond syntax to understand code intent and patterns
+  - Natural Language Querying: Ask questions about codebases in plain English
+  - Progressive Enhancement: Graceful degradation when services are unavailable
+  - Vector-Based Search: Uses embeddings for similarity-based code discovery
+  - Multi-LLM Support: Works with both local (Ollama) and cloud (Claude) LLMs
+  - Intelligent Chunking: Structure-aware code segmentation
+  - MCP Integration: Standard protocol for AI model communication
+
+  Technical Skills and Technologies Used
+
+  Core Languages & Runtime
+
+  - TypeScript - Primary language with strict typing
+  - Node.js 18+ - Runtime environment
+  - ES2020 - Target JavaScript version with ES modules
+
+  AI & Machine Learning
+
+  - Vector Embeddings - Semantic code representation
+  - Large Language Models (LLMs) - Code analysis and understanding
+  - Ollama - Local LLM service integration
+  - Claude API - External LLM integration
+  - Model Context Protocol (MCP) - AI model communication standard
+  - Semantic Search - Vector similarity-based code discovery
+
+  Vector Database & Storage
+
+  - Qdrant - Vector database for embedding storage
+  - Vector Operations - Similarity search and storage
+  - Cosine Distance - Vector similarity metrics
+  - Embedding Management - Vector generation and caching
+
+  Software Architecture
+
+  - Modular Design - Clean separation of concerns
+  - Progressive Enhancement - Graceful service degradation
+  - Controller Pattern - Main orchestration layer
+  - Service Layer Architecture - Scanner, Analysis, Storage, Query layers
+  - Dependency Injection - Configurable service integration
+
+  Code Analysis & Processing
+
+  - Abstract Syntax Tree (AST) analysis
+  - Intelligent Code Chunking - Structure-aware segmentation
+  - Pattern Recognition - Code structure analysis
+  - File System Scanning - Recursive directory traversal
+  - Binary File Detection - Automatic exclusion of non-code files
+
+  Development & Build Tools
+
+  - NPM - Package management
+  - TypeScript Compiler - Build system
+  - Watch Mode - Development automation
+  - Path Mapping - Clean import resolution
+
+  Testing & Quality Assurance
+
+  - Unit Testing - Individual component testing
+  - Integration Testing - Service interaction testing
+  - End-to-End Testing - Complete workflow validation
+  - Diagnostic Scripts - Health checking and troubleshooting
+
+  Deployment & Infrastructure
+
+  - Docker - Containerization
+  - Docker Compose - Service orchestration
+  - Windows Service - System service integration
+  - Environment Configuration - Flexible deployment options
+
+  Monitoring & Observability
+
+  - Structured Logging - Comprehensive error tracking
+  - Performance Monitoring - Execution time tracking
+  - Health Checks - Service availability monitoring
+  - Resource Tracking - Memory and CPU usage monitoring
+
+  Security & Privacy
+
+  - Environment Variables - Secure configuration management
+  - Local Processing - Privacy-first approach
+  - Data Exclusion Patterns - Sensitive file filtering
+  - Error Isolation - Graceful failure handling
+
+  Configuration Management
+
+  - Environment-based Config - Flexible deployment configuration
+  - Feature Flags - Optional functionality control
+  - Service Discovery - Automatic dependency detection
+  - Fallback Mechanisms - Default value management
+
+  File System & I/O
+
+  - Recursive Directory Scanning - Configurable depth traversal
+  - File Pattern Matching - Include/exclude filtering
+  - Binary File Detection - Content-type analysis
+  - Stream Processing - Efficient large file handling
+
+  API Design & Integration
+
+  - RESTful Patterns - Clean API design
+  - JSON Schema Validation - Parameter validation
+  - Error Response Formatting - Standardized error handling
+  - Rate Limiting - Performance protection
+
+  This project demonstrates expertise in modern AI-powered development, vector databases, semantic search,
+  microservices architecture, and production-ready software engineering practices.
