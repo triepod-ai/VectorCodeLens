@@ -17,7 +17,7 @@ async function setupTestEnvironment() {
   
   // Set up environment variables for testing
   process.env.QDRANT_URL = process.env.QDRANT_URL || 'http://localhost:6333';
-  process.env.LLM_SERVER_URL = process.env.LLM_SERVER_URL || 'http://localhost:8020';
+  process.env.LLM_SERVER_URL = process.env.LLM_SERVER_URL || 'http://localhost:11434';
   process.env.USE_MOCK_LLM = process.env.USE_MOCK_LLM || 'true';
   
   // Check if Qdrant is running, if not use mock

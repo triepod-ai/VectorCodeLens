@@ -83,7 +83,7 @@ export function createStorage(config: StorageConfig = {}): StorageManager {
     collectionName: 'code_analysis',
     embeddingDimension: 1536,
     useMock: process.env.USE_MOCK_STORAGE === 'true',
-    llmServerUrl: process.env.LLM_SERVER_URL || 'http://localhost:8020',
+    llmServerUrl: process.env.LLM_SERVER_URL || 'http://localhost:11434',
     maxRetries: 3,
     retryDelay: 1000
   };

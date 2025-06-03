@@ -25,7 +25,7 @@ describe('Code Analysis Module Tests', () => {
     
     analyzer = createAnalyzer({
       useMock: true, // Use mock for predictable tests
-      llmServerUrl: 'http://localhost:8020'
+      llmServerUrl: 'http://localhost:11434'
     });
     
     scanner = createScanner({

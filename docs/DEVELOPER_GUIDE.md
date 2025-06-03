@@ -26,7 +26,7 @@ VectorCodeLens is a semantic codebase analysis platform that uses vector embeddi
    - For storing code embeddings and metadata
    - Local installation or Docker container required
 
-2. **LLM Service** (Port 8020)
+2. **Ollama LLM Service** (Port 11434)
    - Provides LLM capabilities for code analysis
    - Uses Ollama and/or Claude API
    - Must be running before starting VectorCodeLens
@@ -119,7 +119,7 @@ VectorCodeLens/
 
 2. Set up LLM Service
    ```bash
-   # Ensure Ollama is running on port 8020
+   # Ensure Ollama is running on port 11434
    # Or configure Claude API key
    ```
 
@@ -145,7 +145,7 @@ Edit `dist/config.js` after building:
 ```javascript
 export const config = {
   qdrantUrl: 'http://127.0.0.1:6333',
-  llmServiceUrl: 'http://localhost:8020',
+  llmServiceUrl: 'http://localhost:11434',
   claudeApiKey: 'your-api-key-here', // Optional
   claudeModel: 'claude-3-5-sonnet',
   chunkSize: 100,
@@ -272,7 +272,7 @@ Each operation follows a consistent workflow pattern:
 ### Common Issues
 1. **Service startup failures**
    - Check if Qdrant is running: `curl http://127.0.0.1:6333`
-   - Verify LLM service: `curl http://localhost:8020`
+   - Verify Ollama service: `curl http://localhost:11434`
    - Review logs in `debug_run.log`
 
 2. **Windows Service Configuration**

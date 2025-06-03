@@ -5,7 +5,7 @@ const path = require('path');
 
 // Configuration
 const config = {
-  llmPort: 8020,
+  llmPort: 11434,
   qdrantPort: 6333,
   logToFile: true
 };

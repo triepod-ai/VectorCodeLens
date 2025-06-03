@@ -41,7 +41,7 @@ By participating in this project, you agree to abide by our Code of Conduct. Ple
 
 - Node.js (v20.17.25+)
 - Qdrant Vector Database (running on port 6333)
-- LLM Service (running on port 8020)
+- Ollama LLM Service (running on port 11434)
 
 ### Setup
 

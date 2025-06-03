@@ -69,7 +69,7 @@ async function startService(command, args, serviceName) {
         const isRunning = await checkService('http://127.0.0.1:6333/collections', serviceName);
         resolve(isRunning);
       } else if (serviceName === 'LLM Service') {
-        const isRunning = await checkService('http://localhost:8020', serviceName);
+        const isRunning = await checkService('http://localhost:11434', serviceName);
         resolve(isRunning);
       } else {
         resolve(true); // Assume success for other services
@@ -93,7 +93,7 @@ async function checkAllServices() {
   }
   
   // Check LLM Service
-  let llmRunning = await checkService('http://localhost:8020', 'LLM Service');
+  let llmRunning = await checkService('http://localhost:11434', 'Ollama LLM Service');
   
   // Try to start LLM service if it's not running
   if (!llmRunning) {

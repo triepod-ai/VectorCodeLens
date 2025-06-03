@@ -1,6 +1,8 @@
 # VectorCodeLens
 
-A semantic codebase analysis platform that uses vector embeddings and LLMs to understand and query codebases through natural language.
+🚀 **Modern Semantic Code Analysis Platform**
+
+A sophisticated TypeScript application that combines vector embeddings, large language models, and the Model Context Protocol to provide intelligent codebase analysis and natural language querying capabilities.
 
 ## Features
 
@@ -147,9 +149,20 @@ ollama pull rjmalagon/gte-qwen2-1.5b-instruct-embed-f16
 ### Claude API
 Set your API key in the `.env` file for enhanced analysis capabilities.
 
+## Technical Highlights
+
+This project demonstrates modern software engineering practices including:
+
+- **TypeScript**: Fully typed codebase with strict compilation
+- **Vector Databases**: Qdrant integration for semantic search
+- **AI Integration**: LLM-powered code analysis with fallback mechanisms
+- **Modular Architecture**: Clean separation of concerns with dependency injection
+- **Progressive Enhancement**: Graceful degradation when services are unavailable
+- **MCP Protocol**: Standards-compliant Model Context Protocol implementation
+
 ## Contributing
 
-This is a demonstration project showcasing AI-powered code analysis techniques. See [Development Guide](./specs/DEVELOPMENT_GUIDE.md) for detailed contribution guidelines.
+This is a portfolio/demonstration project showcasing advanced AI-powered code analysis techniques. See [Development Guide](./docs/DEVELOPER_GUIDE.md) for detailed technical information.
 
 ## License
 

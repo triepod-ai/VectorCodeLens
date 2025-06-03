@@ -73,8 +73,8 @@ async function startMockServers() {
   return new Promise((resolve, reject) => {
     try {
       // Start LLM mock server
-      mockLlmServer.listen(8020, () => {
-        log('Mock LLM server started on http://localhost:8020');
+      mockLlmServer.listen(11434, () => {
+        log('Mock LLM server started on http://localhost:11434');
         
         // Start Qdrant mock server
         mockQdrantServer.listen(6333, () => {

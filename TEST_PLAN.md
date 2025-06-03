@@ -10,7 +10,7 @@ This document outlines a comprehensive testing strategy for the refactored Vecto
 ### 1.1 Prerequisite Verification
 - [ ] Verify Node.js version (v20.17.25+)
 - [ ] Check Qdrant availability (port 6333)
-- [ ] Verify LLM service availability (port 8020)
+- [ ] Verify Ollama LLM service availability (port 11434)
 - [ ] Create verification script that checks all dependencies
 
 ### 1.2 Project Build Verification

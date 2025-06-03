@@ -5,7 +5,7 @@ const OLLAMA_CONFIGS = [
   { name: 'Default', url: 'http://localhost:11434' },
   { name: 'Alternative localhost', url: 'http://127.0.0.1:11434' },
   { name: 'WSL/Docker bridge', url: 'http://host.docker.internal:11434' },
-  { name: 'Custom port 8020', url: 'http://localhost:8020' },
+  { name: 'Custom port 11434', url: 'http://localhost:11434' },
   { name: 'Custom port 8080', url: 'http://localhost:8080' }
 ];
 

@@ -92,7 +92,7 @@ Environment variables can be used to configure test behavior:
 - `USE_MOCK_LLM`: Set to "true" to use the mock LLM server (default: true)
 - `USE_MOCK_STORAGE`: Set to "true" to use mock vector storage (default: auto-detected)
 - `QDRANT_URL`: URL for Qdrant vector database (default: http://localhost:6333)
-- `LLM_SERVER_URL`: URL for LLM server (default: http://localhost:8020)
+- `LLM_SERVER_URL`: URL for Ollama LLM server (default: http://localhost:11434)
 
 ## Test Fixtures
 

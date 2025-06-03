@@ -119,7 +119,7 @@ async function ensureQdrantServer({
  */
 async function ensureLLMServer({
   host = 'localhost',
-  port = 8020,
+  port = 11434,
   mockResponses = true
 } = {}) {
   console.log('Checking if LLM server is running...');

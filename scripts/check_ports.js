@@ -38,15 +38,15 @@ async function main() {
   console.log('=== Checking port availability ===');
   
   // Check LLM service port
-  const llmPortStatus = await checkPort(8020);
-  console.log(`LLM Service port (8020): ${llmPortStatus}`);
+  const llmPortStatus = await checkPort(11434);
+  console.log(`LLM Service port (11434): ${llmPortStatus}`);
   
   // Check Qdrant port
   const qdrantPortStatus = await checkPort(6333, '127.0.0.1');
   console.log(`Qdrant Vector DB port (6333): ${qdrantPortStatus}`);
   
   console.log('\nResults:');
-  console.log(`- LLM Service port (8020): ${llmPortStatus === 'open' ? 'IN USE - Service might be running' : 'AVAILABLE - Service is not running'}`);
+  console.log(`- LLM Service port (11434): ${llmPortStatus === 'open' ? 'IN USE - Service might be running' : 'AVAILABLE - Service is not running'}`);
   console.log(`- Qdrant port (6333): ${qdrantPortStatus === 'open' ? 'IN USE - Service might be running' : 'AVAILABLE - Service is not running'}`);
   
   console.log('\nConclusion:');
