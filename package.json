@@ -1,0 +1,42 @@
+{
+  "name": "@modelcontextprotocol/vector-code-lens",
+  "version": "0.1.0",
+  "description": "Semantic codebase analysis platform using vector embeddings and LLMs",
+  "license": "MIT",
+  "author": "MCP Team",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node test/test.js",
+    "dev": "tsc --watch",
+    "check-deps": "node scripts/check-dependencies.js",
+    "diagnose": "node scripts/diagnose.js",
+    "test:ollama": "node scripts/test_ollama_enhanced.js",
+    "test:analysis": "node scripts/test_code_analysis.js",
+    "verify": "node scripts/verify-paths.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "@qdrant/js-client-rest": "^1.13.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.0",
+    "glob": "^8.1.0",
+    "lru-cache": "^11.0.2",
+    "node-fetch": "^2.7.0",
+    "node-windows": "^1.0.0-beta.8",
+    "path": "^0.12.7",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/glob": "^8.1.0",
+    "@types/node": "^20.17.25",
+    "@types/node-fetch": "^2.6.12",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "code-analyzer-e2e-tests",
+  "version": "1.0.0",
+  "description": "End-to-end tests for CodeAnalyzerMCP",
+  "private": true,
+  "scripts": {
+    "test": "mocha ./*.js",
+    "test:full": "mocha ./test-full-pipeline.js",
+    "test:scanning": "mocha ./test-scanning.js",
+    "test:analysis": "mocha ./test-analysis.js",
+    "test:storage": "mocha ./test-storage.js",
+    "test:querying": "mocha ./test-querying.js",
+    "test:error-cases": "mocha ./test-error-cases.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^10.2.0",
+    "node-fetch": "^2.7.0",
+    "fs-extra": "^11.1.1"
+  }
+}

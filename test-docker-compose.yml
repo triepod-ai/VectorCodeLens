@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mcp-bridge:
+    container_name: mcp-bridge
+    ports:
+      - "3500:3000"  # API port
+      - "11434:11434"  # Ollama port
+      - "8051:8081"  # MCP primary port
+    networks:
+      - mcp-network
+
+  memory-module:
+    container_name: memory-module-mcp
+    ports:
+      - "3000:3000"  # Memory module port
+    networks:
+      - mcp-network
+
+  mcp-api:
+    container_name: mcp-api-server
+    ports:
+      - "8050:8080"  # API server port
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
